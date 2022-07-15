@@ -1,0 +1,44 @@
+{
+  "name": "@twipped/semrel-config",
+  "version": "0.0.0",
+  "description": "Semantic Release configuration for Twipped projects",
+  "author": "Jocelyn Badgley <jocelyn.badgley@zenbusiness.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twipped/semrel-config.git"
+  },
+  "keywords": [
+    "semantic",
+    "release",
+    "dotfile",
+    "config"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Twipped/semrel-config/issues"
+  },
+  "homepage": "https://github.com/Twipped/semrel-config#readme",
+  "main": ".releaserc.json",
+  "files": [
+    ".releaserc.json",
+    "README.md"
+  ],
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.1"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "semantic-release": "^19.0.3"
+  },
+  "release": {
+    "extends": "./.releaserc.json"
+  }
+}
