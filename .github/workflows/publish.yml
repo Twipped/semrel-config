@@ -17,11 +17,6 @@ jobs:
     env:
       NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
-      - name: Configure CI Git User
-        run: |
-          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git config --local user.name 'github-actions[bot]'
-
       - name: Check out Git repository
         uses: actions/checkout@v3
 
@@ -31,6 +26,11 @@ jobs:
           node-version: 16
           cache: 'npm'
           # registry-url: https://npm.pkg.github.com/
+
+      - name: Configure CI Git User
+        run: |
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --local user.name 'github-actions[bot]'
 
       - name: Install dependencies from npm
         run: npm ci
