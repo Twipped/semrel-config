@@ -1,6 +1,6 @@
 {
   "name": "@twipped/semrel-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Semantic Release configuration for Twipped projects",
   "author": "Jocelyn Badgley <jocelyn.badgley@zenbusiness.com>",
   "keywords": [
