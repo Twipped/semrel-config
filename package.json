@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Semantic Release configuration for Twipped projects",
   "author": "Jocelyn Badgley <jocelyn.badgley@zenbusiness.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Twipped/semrel-config.git"
-  },
   "keywords": [
     "semantic",
     "release",
@@ -18,10 +14,18 @@
     "url": "https://github.com/Twipped/semrel-config/issues"
   },
   "homepage": "https://github.com/Twipped/semrel-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twipped/semrel-config.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": ".releaserc.json",
   "files": [
     ".releaserc.json",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "release": "semantic-release"
